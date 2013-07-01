@@ -5,15 +5,16 @@ handy web interface.
 
 Usage
 -----
-rpm2php can run in two modes: The browser mode, the admin mode
+rpm2php can run in two modes: The browser mode, and admin mode.
 
 For both modes, the file
+```
    rpm2php/system/application/config/config.php
+```
 needs to be configured.
 
-### Mode One
-Browser mode. This mode is meant for public networks:
-
+### Browser Mode
+This mode is meant for public networks.
 The files
 ```
 	rpm2php/login.php \
@@ -29,7 +30,7 @@ The files
 ```
 need to be removed from the public directory. 
 
-### Mode Two
+### Admin Mode
 One needs to crate an .htaccess file. See htaccess-example file.
 An .htpasswd file needs to be created with
 ```
@@ -58,13 +59,13 @@ to enable managing publish scripts through web interface.
 Authors
 =======
 CodeIgniter team:
-	http://codeigniter.com/
+- http://codeigniter.com/
 
 OSS:
-	Kevin Mulvey
-	Dave Diffenbaugh
-	Naveen Gavini
-	Orcan Ogetbil
+- Kevin Mulvey
+- Dave Diffenbaugh
+- Naveen Gavini
+- Orcan Ogetbil
 
 Copying and License
 -------------------
