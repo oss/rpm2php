@@ -5,13 +5,8 @@ handy web interface.
 
 Usage
 -----
-rpm2php can run in two modes: The browser mode, and admin mode.
-
-For both modes, the file
-```
-   rpm2php/system/application/config/config.php
-```
-needs to be configured.
+rpm2php can run in two modes: The browser mode, and admin mode. For both modes,
+the file `rpm2php/system/application/config/config.php` needs to be configured.
 
 ### Browser Mode
 This mode is meant for public networks.
@@ -32,13 +27,9 @@ need to be removed from the public directory.
 
 ### Admin Mode
 One needs to crate an .htaccess file. See htaccess-example file.
-An .htpasswd file needs to be created with
+An .htpasswd file needs to be created with `user: log password: out` via
 ```
-   user: log password: out
-```
-by
-```shell
-	$ htpasswd -c .htpasswd log
+	htpasswd -c .htpasswd log
 ```
 Since there is no actualy logging out from Apache authentication,
 we fake logging out by logging in as this user.
@@ -50,11 +41,9 @@ Finally, symlinks to
 	/usr/bin/pushpackage
 	/usr/bin/populate-rpmfind-db
 ```
-in the webbin directory for webtools
-```
-   /usr/lib64/webtools/webbin/
-```
-to enable managing publish scripts through web interface.
+in the webbin directory for webtools (which should be
+`/usr/lib64/webtools/webbin/`) to enable managing publish scripts through
+the web interface.
 
 Authors
 =======
